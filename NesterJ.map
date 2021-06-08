@@ -1,0 +1,1891 @@
+Archive member included because of file (symbol)
+
+unzip/unziplib.a(zlibInterface.o)
+                              loadromimage.o (Unzip_execExtract)
+unzip/unziplib.a(unzip.o)     unzip/unziplib.a(zlibInterface.o) (unzCloseCurrentFile)
+unzip/unziplib.a(zlibFileMemory.o)
+                              unzip/unziplib.a(unzip.o) (___strcmp)
+unzip/unziplib.a(crc32.o)     unzip/unziplib.a(unzip.o) (get_crc_table)
+unzip/unziplib.a(inflate.o)   unzip/unziplib.a(unzip.o) (inflateInit2_)
+unzip/unziplib.a(inftrees.o)  unzip/unziplib.a(inflate.o) (inflate_table)
+unzip/unziplib.a(ioapi.o)     unzip/unziplib.a(unzip.o) (fill_fopen_filefunc)
+unzip/unziplib.a(zutil.o)     unzip/unziplib.a(inflate.o) (zcalloc)
+unzip/unziplib.a(adler32.o)   unzip/unziplib.a(inflate.o) (adler32)
+unzip/unziplib.a(inffast.o)   unzip/unziplib.a(inflate.o) (inflate_fast)
+
+Allocating common symbols
+Common symbol       size              file
+
+pga_handle          0x4               pg.o
+___zlibAllocBuffPointer
+                    0x4               unzip/unziplib.a(zlibFileMemory.o)
+now_sensor_x        0x4               inputmanager.o
+pgc_csr_x           0x8               pg.o
+pga_threadhandle    0x4               pg.o
+pgc_bgcolor         0x8               pg.o
+Mode2FramePeriodTime
+                    0x4               emu_main.o
+new_pad             0x4               pg.o
+g_ROM               0x180830          nes/nes_rom.o
+sortfiles           0x2000            filer.o
+pgc_fgdraw          0x2               pg.o
+g_szRenderMsg       0x50              screenmanager.o
+pg_showframe        0x4               pg.o
+___zlibAllocBuff    0x10000           unzip/unziplib.a(zlibFileMemory.o)
+g_apu_t             0x18e90           nes/apu/nes_apu.o
+pgc_bgdraw          0x2               pg.o
+g_PPU               0x93c4            nes/ppu/nes_ppu.o
+NormalFramePeriodTime
+                    0x4               emu_main.o
+pg_screenmode       0x4               pg.o
+paddata             0x10              pg.o
+g_NESmapper         0x420ec           nes/nes_mapper.o
+pg_drawframe        0x4               pg.o
+FilerMsg            0x100             filer.o
+pgc_fgcolor         0x8               pg.o
+files               0xb0000           filer.o
+g_SoundBufSilent    0x400             sound.o
+setting             0x4a4             main.o
+g_PadBit            0x6               inputmanager.o
+pga_callback        0x4               pg.o
+g_SNSSObj           0xb9fc            nes/libsnss/libsnss.o
+now_sensor_y        0x4               inputmanager.o
+pgc_csr_y           0x8               pg.o
+g_NES               0x20dd4           nes/nes.o
+g_ReadRomImage      0x10a000          nes/nes_rom.o
+szLastGeniePath     0x200             main.o
+Mode1FramePeriodTime
+                    0x4               emu_main.o
+nfiles              0x4               filer.o
+pgc_mag             0x2               pg.o
+g_Pal               0x200             screenmanager.o
+g_NESConfig         0x1c              nes/nes_config.o
+RomPath             0x200             main.o
+g_bEnableBitmap     0x1               menu.o
+g_DBbufPtr          0x4               nes/fileio.o
+old_pad             0x4               pg.o
+now_pad             0x4               pg.o
+g_ScrBuf            0x11000           screenmanager.o
+g_DBBuf             0x100000          nes/fileio.o
+pg_workdir          0x200             pg.o
+pg_mypath           0x200             pg.o
+g_SoundBuf          0x2800            sound.o
+g_nRenderMsgLen     0x4               screenmanager.o
+g_bgBitmap          0x3fc00           menu.o
+g_BiosCheckBuf      0x2000            menu_submenu.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD nes/cpu/nes6502.o
+LOAD nes/cpu/nes_6502.o
+LOAD nes/ppu/nes_ppu.o
+LOAD nes/apu/fdssnd.o
+LOAD nes/apu/nes_apu.o
+LOAD nes/apu/nes_apu_wrapper.o
+LOAD nes/apu/nes_exsound.o
+LOAD nes/apu/nes_fme7.o
+LOAD nes/apu/nes_mmc5.o
+LOAD nes/apu/nes_n106.o
+LOAD nes/apu/nes_vrc6.o
+LOAD nes/apu/nes_vrc7.o
+LOAD nes/nes.o
+LOAD nes/nes_config.o
+LOAD nes/nes_mapper.o
+LOAD nes/nes_rom.o
+LOAD nes/snss.o
+LOAD nes/fileio.o
+LOAD nes/nes_crc32.o
+LOAD nes/libsnss/libsnss.o
+LOAD emu_main.o
+LOAD loadromimage.o
+LOAD soundmanager.o
+LOAD screenmanager.o
+LOAD inputmanager.o
+LOAD startup.o
+LOAD main.o
+LOAD pg.o
+LOAD menu.o
+LOAD filer.o
+LOAD sound.o
+LOAD debug/debug.o
+LOAD string.o
+LOAD menu_submenu.o
+LOAD unzip/unziplib.a
+Address of section .text set to 0x8900000
+                0x0000000000000000                _DYNAMIC_LINK = 0x0
+                0x0000000000100000                . = 0x100000
+
+.interp
+ *(.interp)
+
+.reginfo        0x0000000000100000       0x18
+ *(.reginfo)
+ .reginfo       0x0000000000100000       0x18 nes/cpu/nes6502.o
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.dyn
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+
+.rela.dyn
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.init
+ *(.init)
+
+.plt
+ *(.plt)
+
+.text           0x0000000008900000    0x4f300
+                0x0000000008900000                _ftext = .
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000008900000     0xdf70 nes/cpu/nes6502.o
+                0x000000000890df58                nes6502_burn
+                0x000000000890db1c                nes6502_irq
+                0x000000000890de7c                nes6502_getcontext
+                0x000000000890dc8c                nes6502_pending_irq
+                0x000000000890df1c                nes6502_reset
+                0x000000000890ded4                nes6502_getbyte
+                0x000000000890defc                nes6502_getcycles
+                0x000000000890d9e4                nes6502_nmi
+                0x000000000890de08                nes6502_setcontext
+                0x0000000008900000                nes6502_execute
+ .text          0x000000000890df70      0x118 nes/cpu/nes_6502.o
+                0x000000000890df8c                NES6502_Execute
+                0x000000000890dffc                NES6502_SetDMA
+                0x000000000890dfc4                NES6502_DoIRQ
+                0x000000000890e06c                NES6502_GetContext
+                0x000000000890dfa8                NES6502_DoNMI
+                0x000000000890e018                NES6502_GetByte
+                0x000000000890df70                NES6502_Reset
+                0x000000000890dfe0                NES6502_DoPendingIRQ
+                0x000000000890e050                NES6502_SetContext
+                0x000000000890e034                NES6502_GetCycles
+ .text          0x000000000890e088     0x21c8 nes/ppu/nes_ppu.o
+                0x000000000890e588                NES_PPU_write_2007
+                0x000000000890ffec                NES_PPU_set_mirroring
+                0x000000000890ffb8                NES_PPU_getViewableHeight
+                0x000000000890e300                NES_PPU_do_scanline_and_draw
+                0x0000000008910030                NES_PPU_start_frame
+                0x000000000890e268                NES_PPU_set_mirroring2
+                0x000000000890e8c4                NES_PPU_render_bg_internal1
+                0x00000000089100f8                NES_PPU_ReadLowRegs
+                0x000000000890f464                NES_PPU_render_spr_internal1
+                0x000000000891006c                NES_PPU_read_2007
+                0x00000000089101e8                NES_PPU_Write0x4014
+                0x000000000890ff8c                NES_PPU_getTopMargin
+                0x000000000890e664                NES_PPU_WriteLowRegs
+                0x000000000890fa08                NES_PPU_render_spr_internal2
+                0x000000000890e464                NES_PPU_do_scanline_and_dont_draw
+                0x000000000890eeb0                NES_PPU_render_bg_internal2
+                0x000000000890e088                NES_PPU_reset
+ .text          0x0000000008910250      0x930 nes/apu/fdssnd.o
+ .text          0x0000000008910b80     0x2250 nes/apu/nes_apu.o
+                0x0000000008912020                sync_apu_register
+                0x0000000008911cf8                apu_getpcmdata
+                0x0000000008911fb0                apu_destroy
+                0x0000000008911114                ex_write
+                0x0000000008910b80                ex_read
+                0x0000000008911df4                apu_build_luts
+                0x0000000008911e9c                apu_create
+                0x0000000008911d44                apu_setlowpass_filter_f
+                0x0000000008911c0c                apu_getcontext
+                0x00000000089119bc                apu_setparams
+                0x0000000008911d60                apu_reset_apus
+                0x0000000008911b70                sync_dmc_register
+                0x0000000008910e8c                apu_write_cur
+                0x0000000008911240                apu_process
+                0x0000000008911d28                apu_setfilter
+                0x0000000008910cac                apu_write
+                0x0000000008911c18                apu_setchan
+                0x0000000008911830                apu_reset
+                0x0000000008911c38                apu_read
+ .text          0x0000000008912dd0      0x848 nes/apu/nes_apu_wrapper.o
+                0x00000000089130b8                NES_APU_AssertParams
+                0x00000000089135e0                NES_APU_SyncAPURegister
+                0x000000000891309c                NES_APU_ShutDown
+                0x00000000089132f0                NES_APU_Write
+                0x0000000008913408                NES_APU_freeze
+                0x0000000008913340                NES_APU_ExRead
+                0x000000000891335c                NES_APU_ExWrite
+                0x0000000008913424                NES_APU_thaw
+                0x00000000089134f0                NES_APU_get_regs
+                0x00000000089131a0                NES_APU_snd_mgr_changed
+                0x00000000089135fc                NES_APU_SyncDMCRegister
+                0x0000000008913378                NES_APU_DoFrame
+                0x00000000089132d4                NES_APU_Read
+                0x0000000008913170                NES_APU_reset
+                0x0000000008912f80                NES_APU_Init
+                0x0000000008912dd0                NES_APU_SelectExSound
+                0x000000000891344c                NES_APU_load_regs
+ .text          0x0000000008913618       0xe4 nes/apu/nes_exsound.o
+                0x00000000089136a0                LogTableInitialize
+                0x0000000008913618                LinearToLog
+                0x00000000089136a8                DivFix
+                0x0000000008913650                LogToLinear
+ .text          0x00000000089136fc      0x6bc nes/apu/nes_fme7.o
+ .text          0x0000000008913db8      0x74c nes/apu/nes_mmc5.o
+ .text          0x0000000008914504      0x564 nes/apu/nes_n106.o
+ .text          0x0000000008914a68      0x4c0 nes/apu/nes_vrc6.o
+ .text          0x0000000008914f28      0xc88 nes/apu/nes_vrc7.o
+                0x0000000008914f28                OPLLSoundReset
+                0x000000000891505c                VRC7SetTone
+                0x00000000089150a8                VRC7_Reset
+ .text          0x0000000008915bb0     0x3be0 nes/nes.o
+                0x0000000008919618                NES_loadState
+                0x0000000008917bfc                NES_emulate_PAL_frame
+                0x0000000008919658                NES_ppu_rgb
+                0x0000000008918e34                NES_Load_Genie
+                0x000000000891973c                NES_DiskAccessed
+                0x00000000089178ac                NES_emulate_NTSC_frame
+                0x0000000008918940                NES_calculate_palette
+                0x0000000008919680                NES_GetDiskSideNum
+                0x000000000891836c                NES_emulate_CPU_cycles
+                0x00000000089196f0                NES_SetDiskSide
+                0x0000000008917f38                NES_WriteLowRegs
+                0x00000000089193fc                NES_set_pad
+                0x0000000008918188                NES_WriteHighRegs
+                0x0000000008919638                NES_saveState
+                0x0000000008918638                NES_Save_Disk
+                0x000000000891943c                NES_emulate_frame
+                0x00000000089187c8                NES_Load_Disk
+                0x00000000089164c0                NES_reset
+                0x0000000008918544                NES_Load_SaveRAM
+                0x0000000008917fd8                NES_ReadHighRegs
+                0x0000000008918400                NES_trim_cycle_counts
+                0x00000000089196b8                NES_GetDiskSide
+                0x0000000008919774                NES_GetROMInfoStr
+                0x00000000089194d0                NES_frozen
+                0x0000000008915bb0                NES_loadROM
+                0x0000000008919484                NES_freeze
+                0x0000000008919388                NES_Init
+                0x0000000008917e58                NES_MemoryWrite
+                0x0000000008918434                NES_Save_SaveRAM
+                0x00000000089195c0                NES_ReadLowRegs
+                0x0000000008916484                NES_freeROM
+                0x00000000089194ac                NES_thaw
+                0x00000000089194dc                NES_MemoryRead
+ .text          0x0000000008919790       0xec nes/nes_config.o
+                0x00000000089197f8                NES_Config_SetPreferencesDefaults
+                0x0000000008919834                NES_Config_SetSoundDefaults
+                0x0000000008919790                NES_Config_SetDefaults_All
+                0x0000000008919814                NES_Config_SetGraphicsDefaults
+ .text          0x000000000891987c    0x20194 nes/nes_mapper.o
+                0x0000000008930218                NES_mapper20_SetDiskSide
+                0x000000000892e3ac                NES_mapper_base_set_VRAM_bank
+                0x00000000089338d4                NES_mapper73_HSync
+                0x000000000892908c                NES_mapper226_MemoryWrite
+                0x000000000891bc3c                NES_mapper10_MemoryWrite
+                0x0000000008937b24                NES_mapper235_Init
+                0x0000000008931ea0                NES_mapper46_set_rom_banks
+                0x0000000008922d64                NES_mapper57_MemoryWrite
+                0x000000000892f8b4                NES_mapper13_Reset
+                0x0000000008938cc0                NES_mapper255_MemoryWriteLow
+                0x0000000008926324                NES_mapper100_MMC3_set_PPU_banks
+                0x000000000892c278                GetMapper
+                0x000000000891de10                NES_mapper19_MemoryReadLow
+                0x0000000008924da4                NES_mapper85_MemoryWrite
+                0x0000000008935194                NES_mapper96_Init
+                0x000000000893199c                NES_mapper46_Reset
+                0x0000000008929540                NES_mapper229_MemoryWrite
+                0x0000000008932980                NES_mapper52_SNSS_fixup
+                0x0000000008932cdc                NES_mapper62_Reset
+                0x00000000089357e4                NES_mapper99_Init
+                0x0000000008939140                NES_UNIFmapper3_Setprg
+                0x0000000008937d5c                NES_mapper240_MemoryWriteLow
+                0x0000000008933d28                NES_mapper78_MemoryWrite
+                0x000000000892ba60                NES_UNIFmapper4_MemoryWrite
+                0x00000000089302a4                NES_mapper21_Reset
+                0x00000000089320dc                NES_mapper47_HSync
+                0x000000000893065c                NES_mapper23_SNSS_fixup
+                0x0000000008937b48                NES_mapper235_Reset
+                0x0000000008938d90                NES_mapperNSF_MemoryWriteSaveRAM
+                0x00000000089254b8                NES_mapper90_Sync_Mirror
+                0x000000000892793c                NES_mapper151_MemoryWrite
+                0x000000000893704c                NES_mapper187_MemoryWriteLow
+                0x000000000892b044                NES_mapper254_MemoryWrite
+                0x000000000891c8c0                NES_mapper16_SetBarcodeValue
+                0x000000000893113c                NES_mapper40_HSync
+                0x0000000008935750                NES_mapper97_MemoryWrite
+                0x0000000008932d50                NES_mapper62_MemoryWrite
+                0x00000000089360d8                NES_mapper114_MemoryWrite
+                0x0000000008935ca4                NES_mapper112_Init
+                0x0000000008937380                NES_mapper189_HSync
+                0x0000000008922b94                NES_mapper52_MMC3_set_CPU_banks
+                0x0000000008933418                NES_mapper68_Init
+                0x000000000893392c                NES_mapper74_Init
+                0x000000000892e954                NES_mapper5_HSync
+                0x0000000008936b28                NES_mapper181_Init
+                0x0000000008937a74                NES_mapper233_Init
+                0x000000000892a8dc                NES_mapper245_MemoryWrite
+                0x000000000893024c                NES_mapper20_GetDiskDatap
+                0x0000000008936278                NES_mapper117_Reset
+                0x00000000089218a0                NES_mapper45_MAP45_set_CPU_bank5
+                0x000000000893203c                NES_mapper47_Init
+                0x000000000891aa90                NES_mapper5_Reset
+                0x000000000892f73c                NES_mapper11_Reset
+                0x0000000008936630                NES_mapper122_Reset
+                0x0000000008939688                NES_UNIFmapper4_setchr1
+                0x0000000008930fd8                NES_mapper34_MemoryWrite
+                0x0000000008938cec                NES_mapperNSF_Init
+                0x0000000008932c18                NES_mapper60_Init
+                0x0000000008929a34                NES_mapper234_MemoryWrite
+                0x0000000008923e20                NES_mapper69_MemoryWrite
+                0x0000000008934440                NES_mapper85_HSync
+                0x0000000008938a44                NES_mapper252_Init
+                0x0000000008930810                NES_mapper25_Init
+                0x0000000008926ae8                NES_mapper113_MemoryWrite
+                0x00000000089326e8                NES_mapper51_Init
+                0x0000000008926f04                NES_mapper118_MemoryWrite
+                0x0000000008936a10                NES_mapper180_Init
+                0x00000000089346dc                NES_mapper87_MemoryWriteSaveRAM
+                0x00000000089269a8                NES_mapper113_MemoryWriteLow
+                0x0000000008935c3c                NES_mapper105_HSync
+                0x000000000892fcc0                NES_mapper17_Reset
+                0x00000000089334bc                NES_mapper69_Reset
+                0x0000000008934d2c                NES_mapper92_Reset
+                0x0000000008920978                NES_mapper34_MemoryWriteSaveRAM
+                0x000000000893214c                NES_mapper48_Init
+                0x0000000008935a10                NES_mapper101_Reset
+                0x000000000892dffc                NES_mapper_base_set_CPU_bank3
+                0x00000000089327e8                NES_mapper52_Init
+                0x00000000089339d0                NES_mapper74_MemoryWrite
+                0x000000000891b250                NES_mapper5_MMC5_set_CPU_bank
+                0x0000000008933690                NES_mapper71_Reset
+                0x0000000008926c0c                NES_mapper115_MemoryWrite
+                0x0000000008933c88                NES_mapper78_Init
+                0x0000000008930274                NES_mapper21_Init
+                0x000000000893356c                NES_mapper69_HSync
+                0x0000000008939900                NES_UNIFmapper4_MemoryWriteLow
+                0x0000000008935fbc                NES_mapper113_Reset
+                0x000000000892e104                NES_mapper_base_set_PPU_bank2
+                0x0000000008938f84                NES_UNIFmapper2_Init
+                0x000000000892e74c                NES_mapper3_Reset
+                0x0000000008925c30                NES_mapper95_MemoryWrite
+                0x0000000008930d04                NES_mapper33_Init
+                0x0000000008936058                NES_mapper114_Reset
+                0x00000000089335bc                NES_mapper70_Init
+                0x000000000892f5d0                NES_mapper10_set_VROM_1000
+                0x0000000008938e58                NES_mapperNSF_MemoryReadLow
+                0x0000000008936ed0                NES_mapper185_Init
+                0x000000000893196c                NES_mapper46_Init
+                0x0000000008934144                NES_mapper83_Init
+                0x000000000892e19c                NES_mapper_base_set_PPU_bank4
+                0x0000000008924a68                NES_mapper83_MemoryWrite
+                0x0000000008921fa0                NES_mapper47_MMC3_set_PPU_banks
+                0x00000000089259ec                NES_mapper91_MemoryWriteSaveRAM
+                0x0000000008922714                NES_mapper49_MMC3_set_PPU_banks
+                0x0000000008938bdc                NES_mapper254_HSync
+                0x0000000008934ef4                NES_mapper94_MemoryWrite
+                0x0000000008930004                NES_mapper19_Init
+                0x000000000893949c                NES_UNIFmapper4_Init
+                0x00000000089381cc                NES_mapper244_MemoryWrite
+                0x0000000008934dcc                NES_mapper93_Reset
+                0x000000000893767c                NES_mapper229_Init
+                0x000000000893290c                NES_mapper52_HSync
+                0x00000000089396dc                NES_UNIFmapper4_setchr2
+                0x000000000893426c                NES_mapper83_MemoryWriteLow
+                0x0000000008929b10                NES_mapper234_Sync
+                0x0000000008937840                NES_mapper231_MemoryWrite
+                0x0000000008938b24                NES_mapper254_Reset
+                0x00000000089276d0                NES_mapper119_MMC3_set_PPU_banks
+                0x0000000008923904                NES_mapper67_MemoryWrite
+                0x000000000893371c                NES_mapper72_Init
+                0x000000000893593c                NES_mapper100_Init
+                0x00000000089325a0                NES_mapper50_Init
+                0x0000000008930f5c                NES_mapper34_Reset
+                0x0000000008937414                NES_mapper222_Reset
+                0x0000000008938154                NES_mapper244_Reset
+                0x0000000008933cac                NES_mapper78_Reset
+                0x000000000893845c                NES_mapper248_MemoryWriteSaveRAM
+                0x000000000891be14                NES_mapper15_MemoryWrite
+                0x00000000089390fc                NES_UNIFmapper3_Reset
+                0x000000000891f1a4                NES_mapper22_MemoryWrite
+                0x0000000008937728                NES_mapper230_Reset
+                0x0000000008930760                NES_mapper24_Reset
+                0x0000000008933af0                NES_mapper76_Init
+                0x000000000892ebcc                NES_mapper6_MemoryWrite
+                0x0000000008936e7c                NES_mapper183_HSync
+                0x0000000008932d40                NES_mapper62_MemoryWriteSaveRAM
+                0x0000000008936990                NES_mapper160_Init
+                0x000000000892fbcc                NES_mapper16_MemoryWriteSaveRAM
+                0x000000000892a9d8                NES_mapper246_MemoryWriteSaveRAM
+                0x000000000892f64c                NES_mapper10_SNSS_fixup
+                0x000000000892fc00                NES_mapper16_MemoryReadSaveRAM
+                0x00000000089245a4                NES_mapper76_MemoryWrite
+                0x00000000089371b8                NES_mapper188_Init
+                0x0000000008933fd4                NES_mapper80_Init
+                0x00000000089349e4                NES_mapper90_Init
+                0x0000000008938d34                NES_mapperNSF_MemoryWriteLow
+                0x0000000008936824                NES_mapper140_MemoryWriteSaveRAM
+                0x000000000892ea90                NES_mapper6_Init
+                0x000000000893263c                NES_mapper50_MemoryWriteLow
+                0x0000000008928aac                NES_mapper187_MMC3_set_PPU_banks
+                0x000000000893348c                NES_mapper69_Init
+                0x00000000089280e0                NES_mapper183_MemoryWrite
+                0x000000000892fa64                NES_mapper13_SNSS_fixup
+                0x000000000892e6a8                NES_mapper2_Reset
+                0x000000000892adcc                NES_mapper251_banksync
+                0x0000000008937538                NES_mapper226_Init
+                0x00000000089315c4                NES_mapper43_MemoryWrite
+                0x000000000893151c                NES_mapper43_Reset
+                0x00000000089231c0                NES_mapper60_MemoryWrite
+                0x000000000893615c                NES_mapper115_Reset
+                0x000000000892865c                NES_mapper187_Reset
+                0x000000000892e280                NES_mapper_base_set_PPU_bank7
+                0x000000000893240c                NES_mapper49_SNSS_fixup
+                0x00000000089375f4                NES_mapper228_Init
+                0x00000000089389a4                NES_mapper251_MemoryWrite
+                0x0000000008920b60                NES_mapper43_MemoryWriteLow
+                0x000000000892e51c                NES_mapper0_Init
+                0x0000000008920c08                NES_mapper44_MemoryWrite
+                0x0000000008933bf0                NES_mapper77_MemoryWrite
+                0x000000000891f93c                NES_mapper24_MemoryWrite
+                0x0000000008931604                NES_mapper43_HSync
+                0x0000000008932824                NES_mapper52_Reset
+                0x000000000892e6e0                NES_mapper2_MemoryWrite
+                0x000000000892f338                NES_mapper10_Init
+                0x0000000008937ac8                NES_mapper234_Init
+                0x00000000089317bc                NES_mapper45_Init
+                0x000000000892db18                NES_mapper_base_PPU_Latch_FDFE
+                0x0000000008930e98                NES_mapper33_HSync
+                0x000000000892db10                NES_mapper_base_VSync
+                0x00000000089373f0                NES_mapper222_Init
+                0x0000000008933950                NES_mapper74_Reset
+                0x00000000089348bc                NES_mapper89_MemoryWrite
+                0x0000000008922818                NES_mapper51_Sync_Prg_Banks
+                0x000000000892dae8                NES_mapper_base_MemoryWrite
+                0x0000000008934640                NES_mapper87_Init
+                0x0000000008926654                NES_mapper112_MemoryWrite
+                0x00000000089332e8                NES_mapper67_Reset
+                0x000000000893749c                NES_mapper225_Init
+                0x0000000008937cbc                NES_mapper240_Init
+                0x0000000008937964                NES_mapper232_Reset
+                0x0000000008934a2c                NES_mapper90_Reset
+                0x000000000893596c                NES_mapper100_HSync
+                0x00000000089262f0                NES_mapper100_MMC3_set_CPU_banks
+                0x000000000892ef88                NES_mapper9_Reset
+                0x00000000089333a4                NES_mapper67_HSync
+                0x000000000892db30                NES_mapper_base_GetDiskSideNum
+                0x0000000008928a48                NES_mapper187_MMC3_set_CPU_banks
+                0x000000000893478c                NES_mapper88_Init
+                0x000000000892bf64                NES_mapper_Init
+                0x0000000008937fe8                NES_mapper242_MemoryWrite
+                0x000000000891f35c                NES_mapper23_MemoryWrite
+                0x0000000008932750                NES_mapper51_MemoryWriteSaveRAM
+                0x000000000891ea58                NES_mapper20_HSync
+                0x0000000008931914                NES_mapper45_MAP45_set_CPU_bank7
+                0x0000000008937af8                NES_mapper234_Reset
+                0x00000000089340b8                NES_mapper82_Reset
+                0x0000000008933b14                NES_mapper76_Reset
+                0x0000000008932ed8                NES_mapper64_HSync
+                0x0000000008926924                NES_mapper112_MMC3_set_PPU_banks
+                0x00000000089388cc                NES_mapper251_Reset
+                0x0000000008936928                NES_mapper151_Reset
+                0x000000000892e234                NES_mapper_base_set_PPU_bank6
+                0x00000000089317f8                NES_mapper45_MemoryWriteSaveRAM
+                0x000000000892ede4                NES_mapper8_Init
+                0x0000000008934830                NES_mapper89_Init
+                0x0000000008921af8                NES_mapper47_Reset
+                0x000000000892f718                NES_mapper11_Init
+                0x000000000891b5b0                NES_mapper5_MMC5_set_WRAM_bank
+                0x0000000008923050                NES_mapper58_MemoryWrite
+                0x0000000008936de4                NES_mapper183_Reset
+                0x0000000008933040                NES_mapper66_Init
+                0x0000000008937a98                NES_mapper233_Reset
+                0x0000000008919b6c                NES_mapper1_MMC1_set_CPU_banks
+                0x000000000893755c                NES_mapper226_Reset
+                0x000000000892db60                NES_mapper_base_set_CPU_banks4
+                0x000000000892723c                NES_mapper118_SNSS_fixup
+                0x0000000008938bd4                NES_mapper254_MemoryReadSaveRAM
+                0x000000000892dd34                NES_mapper_base_set_CPU_bank6
+                0x0000000008937e74                NES_mapper241_Reset
+                0x0000000008938ae8                NES_mapper254_Init
+                0x0000000008932264                NES_mapper49_Init
+                0x0000000008925fb0                NES_mapper100_MemoryWrite
+                0x000000000892ee90                NES_mapper8_MemoryWrite
+                0x000000000892db00                NES_mapper_base_MemoryReadSaveRAM
+                0x000000000893726c                NES_mapper189_Init
+                0x000000000892fe7c                NES_mapper18_HSync
+                0x000000000892057c                NES_mapper32_MemoryWrite
+                0x00000000089387fc                NES_mapper250_Init
+                0x0000000008936ad4                NES_mapper180_MemoryWrite
+                0x000000000892fdd0                NES_mapper18_Reset
+                0x0000000008939994                NES_UNIFmapper4_HSync
+                0x000000000892a368                NES_mapper237_MemoryWrite
+                0x00000000089336c8                NES_mapper71_MemoryWriteSaveRAM
+                0x0000000008920a70                NES_mapper42_MemoryWrite
+                0x00000000089374c0                NES_mapper225_Reset
+                0x0000000008928c0c                NES_mapper189_MemoryWrite
+                0x0000000008932e20                NES_mapper64_Reset
+                0x00000000089367ac                NES_mapper140_Reset
+                0x0000000008932788                NES_mapper51_MemoryWrite
+                0x0000000008931748                NES_mapper44_HSync
+                0x00000000089246d8                NES_mapper80_MemoryWriteSaveRAM
+                0x0000000008934da8                NES_mapper93_Init
+                0x0000000008938894                NES_mapper250_MemoryWrite
+                0x000000000892e5e8                NES_mapper1_Init
+                0x0000000008926378                NES_mapper105_MemoryWrite
+                0x000000000892f26c                NES_mapper9_SNSS_fixup
+                0x0000000008934b60                NES_mapper90_HSync
+                0x000000000893038c                NES_mapper21_SNSS_fixup
+                0x0000000008936cd0                NES_mapper182_Reset
+                0x0000000008937ba0                NES_mapper236_Init
+                0x00000000089342dc                NES_mapper85_Init
+                0x000000000891a3a4                NES_mapper4_MemoryWrite
+                0x00000000089358b0                NES_mapper99_WriteHighRegs
+                0x0000000008938820                NES_mapper250_Reset
+                0x0000000008935f8c                NES_mapper113_Init
+                0x00000000089369c0                NES_mapper160_Reset
+                0x000000000892b100                NES_mapper255_MemoryWrite
+                0x000000000893122c                NES_mapper41_MemoryWriteSaveRAM
+                0x0000000008932df0                NES_mapper64_Init
+                0x000000000892e460                NES_mapper_base_set_genie
+                0x000000000892db48                NES_mapper_base_GetDiskDatap
+                0x000000000891c6c0                NES_mapper16_MemoryWrite3
+                0x0000000008937c30                NES_mapper237_Reset
+                0x000000000892e684                NES_mapper2_Init
+                0x0000000008936d44                NES_mapper182_HSync
+                0x000000000892af14                NES_mapper252_MemoryWrite
+                0x0000000008933a44                NES_mapper75_Init
+                0x0000000008932718                NES_mapper51_Reset
+                0x000000000892e618                NES_mapper1_MemoryWriteSaveRAM
+                0x0000000008931030                NES_mapper40_Reset
+                0x0000000008930258                NES_mapper20_DiskAccessed
+                0x000000000891a86c                NES_mapper4_SNSS_fixup
+                0x000000000892e530                NES_mapper0_Reset
+                0x000000000892eacc                NES_mapper6_Reset
+                0x0000000008937618                NES_mapper228_Reset
+                0x0000000008939384                NES_UNIFmapper3_MemoryWrite
+                0x00000000089312ec                NES_mapper41_MemoryWrite
+                0x000000000892e82c                NES_mapper4_Init
+                0x00000000089361e8                NES_mapper115_HSync
+                0x0000000008935bd4                NES_mapper105_Reset
+                0x0000000008934854                NES_mapper89_Reset
+                0x0000000008930950                NES_mapper25_HSync
+                0x000000000893343c                NES_mapper68_Reset
+                0x00000000089325d0                NES_mapper50_Reset
+                0x0000000008922c3c                NES_mapper52_MMC3_set_PPU_banks
+                0x0000000008934b38                NES_mapper90_MemoryReadLow
+                0x000000000892f890                NES_mapper13_Init
+                0x000000000891a270                NES_mapper4_MemoryReadLow
+                0x0000000008937940                NES_mapper232_Init
+                0x0000000008930bf0                NES_mapper32_Init
+                0x0000000008928ee0                NES_mapper225_MemoryWrite
+                0x0000000008930178                NES_mapper20_VSync
+                0x000000000893004c                NES_mapper19_HSync
+                0x0000000008930c14                NES_mapper32_Reset
+                0x000000000891e3e4                NES_mapper20_Reset
+                0x000000000893889c                NES_mapper251_Init
+                0x00000000089390c4                NES_UNIFmapper2_MemoryWrite
+                0x0000000008922384                NES_mapper49_MemoryWrite
+                0x000000000892daf8                NES_mapper_base_MemoryWriteSaveRAM
+                0x00000000089372a8                NES_mapper189_Reset
+                0x0000000008938e98                NES_UNIFmapper1_Reset
+                0x000000000892dacc                NES_mapper_base_Reset
+                0x0000000008935308                NES_mapper96_PPU_Latch_Address
+                0x000000000892766c                NES_mapper119_MMC3_set_CPU_banks
+                0x0000000008936248                NES_mapper117_Init
+                0x0000000008922974                NES_mapper52_MemoryWrite
+                0x0000000008938734                NES_mapper249_MemoryWrite
+                0x00000000089351c4                NES_mapper96_Reset
+                0x0000000008930d34                NES_mapper33_Reset
+                0x00000000089394d8                NES_UNIFmapper4_Reset
+                0x000000000892db40                NES_mapper_base_SetDiskSide
+                0x000000000892db28                NES_mapper_base_PPU_Latch_Address
+                0x000000000892b4dc                NES_mapperNSF_BankSwitch
+                0x00000000089221a8                NES_mapper48_MemoryWrite
+                0x000000000891c2b0                NES_mapper16_MemoryWrite2
+                0x00000000089291e4                NES_mapper227_MemoryWrite
+                0x00000000089335e0                NES_mapper70_Reset
+                0x0000000008936f70                NES_mapper185_MemoryWrite
+                0x000000000892ef58                NES_mapper9_Init
+                0x0000000008935b0c                NES_mapper101_MemoryWrite
+                0x0000000008935d94                NES_mapper112_HSync
+                0x00000000089344e0                NES_mapper86_Reset
+                0x0000000008936bb0                NES_mapper181_MemoryWriteLow
+                0x0000000008934e34                NES_mapper93_MemoryWriteSaveRAM
+                0x00000000089326ac                NES_mapper50_HSync
+                0x0000000008932078                NES_mapper47_MemoryWriteSaveRAM
+                0x000000000892b678                NES_mapperNSF_LoadPlayer
+                0x000000000892db58                NES_mapper_base_SetBarcodeValue
+                0x000000000891a5a0                NES_mapper4_HSync
+                0x00000000089390cc                NES_UNIFmapper3_Init
+                0x000000000892ee08                NES_mapper8_Reset
+                0x00000000089377a4                NES_mapper231_Init
+                0x0000000008931684                NES_mapper44_Reset
+                0x000000000892e728                NES_mapper3_Init
+                0x0000000008933b94                NES_mapper77_Init
+                0x0000000008927c80                NES_mapper160_HSync
+                0x000000000892ed08                NES_mapper7_Init
+                0x000000000892e33c                NES_mapper_base_set_PPU_bank10
+                0x000000000892dae0                NES_mapper_base_WriteHighRegs
+                0x0000000008936350                NES_mapper118_Init
+                0x0000000008932d48                NES_mapper62_MemoryWriteLow
+                0x000000000892dcb8                NES_mapper_base_set_CPU_bank5
+                0x00000000089313d8                NES_mapper42_Reset
+                0x0000000008938fc0                NES_UNIFmapper2_Reset
+                0x000000000892feec                NES_mapper18_SNSS_fixup
+                0x0000000008927f64                NES_mapper182_MemoryWrite
+                0x000000000891a0f0                NES_mapper4_Reset
+                0x0000000008938064                NES_mapper243_Init
+                0x000000000892ad50                NES_mapper248_MMC3_set_PPU_banks
+                0x000000000893100c                NES_mapper40_Init
+                0x0000000008936b4c                NES_mapper181_Reset
+                0x000000000893893c                NES_mapper251_MemoryWriteSaveRAM
+                0x000000000891e628                NES_mapper20_MemoryReadLow
+                0x00000000089386b4                NES_mapper249_Reset
+                0x000000000892e2cc                NES_mapper_base_set_PPU_bank8
+                0x000000000892ed2c                NES_mapper7_Reset
+                0x000000000892de2c                NES_mapper_base_set_CPU_bank_unif
+                0x0000000008937330                NES_mapper189_MemoryWriteLow
+                0x00000000089268c0                NES_mapper112_MMC3_set_CPU_banks
+                0x0000000008924174                NES_mapper71_MemoryWrite
+                0x000000000892fda0                NES_mapper18_Init
+                0x0000000008930f2c                NES_mapper34_Init
+                0x000000000893013c                NES_mapper20_MemoryWriteSaveRAM
+                0x00000000089331d8                NES_mapper66_MemoryWrite
+                0x000000000892e150                NES_mapper_base_set_PPU_bank3
+                0x00000000089314d4                NES_mapper43_Init
+                0x000000000891b148                NES_mapper5_MemoryWrite
+                0x000000000892f174                NES_mapper9_set_VROM_0000
+                0x0000000008930150                NES_mapper20_MemoryWrite
+                0x00000000089309d8                NES_mapper25_SNSS_fixup
+                0x00000000089357f8                NES_mapper99_Reset
+                0x0000000008936ef4                NES_mapper185_Reset
+                0x0000000008938a68                NES_mapper252_Reset
+                0x00000000089364d0                NES_mapper119_Init
+                0x0000000008920e8c                NES_mapper44_MMC3_set_CPU_banks
+                0x0000000008920770                NES_mapper33_MemoryWrite
+                0x000000000892e8c8                NES_mapper5_MemoryWriteSaveRAM
+                0x000000000893430c                NES_mapper85_Reset
+                0x000000000891dfc0                NES_mapper19_MemoryWrite
+                0x0000000008930b98                NES_mapper26_HSync
+                0x0000000008928734                NES_mapper187_MemoryWrite
+                0x0000000008930460                NES_mapper22_Init
+                0x00000000089311b4                NES_mapper41_Reset
+                0x0000000008937e50                NES_mapper241_Init
+                0x00000000089356d4                NES_mapper97_Reset
+                0x000000000891ae28                NES_mapper5_MemoryWriteLow
+                0x0000000008919bc8                NES_mapper1_MemoryWrite
+                0x00000000089300a0                NES_mapper20_Init
+                0x0000000008937bc4                NES_mapper236_Reset
+                0x000000000891fc6c                NES_mapper25_MemoryWrite
+                0x0000000008930b0c                NES_mapper26_Reset
+                0x000000000891e7cc                NES_mapper20_MemoryWriteLow
+                0x00000000089347b0                NES_mapper88_Reset
+                0x0000000008929390                NES_mapper228_MemoryWrite
+                0x0000000008931654                NES_mapper44_Init
+                0x00000000089375c4                NES_mapper227_Reset
+                0x000000000891c1ac                NES_mapper16_HSync
+                0x000000000892e428                NES_mapper_base_set_mirroring
+                0x000000000892589c                NES_mapper90_Sync_Prg_Banks
+                0x000000000891a6c0                NES_mapper4_MMC3_set_PPU_banks
+                0x0000000008929eec                NES_mapper235_MemoryWrite
+                0x00000000089202f4                NES_mapper26_MemoryWrite
+                0x0000000008933740                NES_mapper72_Reset
+                0x0000000008939254                NES_UNIFmapper3_MemoryWriteSaveRAM
+                0x000000000892acec                NES_mapper248_MMC3_set_CPU_banks
+                0x0000000008921010                NES_mapper44_MMC3_set_PPU_banks
+                0x000000000892dad4                NES_mapper_base_MemoryReadLow
+                0x000000000892aaf8                NES_mapper248_MemoryWrite
+                0x0000000008938690                NES_mapper249_Init
+                0x0000000008934c00                NES_mapper91_Reset
+                0x000000000892ddb0                NES_mapper_base_set_CPU_bank7
+                0x0000000008937704                NES_mapper230_Init
+                0x000000000892a160                NES_mapper236_MemoryWrite
+                0x0000000008926d94                NES_mapper117_MemoryWrite
+                0x000000000891b6b0                NES_mapper5_sync_Chr_banks
+                0x0000000008934ebc                NES_mapper94_Reset
+                0x0000000008923b04                NES_mapper68_MemoryWrite
+                0x0000000008935a74                NES_mapper101_MemoryWriteSaveRAM
+                0x0000000008932b28                NES_mapper57_Reset
+                0x000000000892fb8c                NES_mapper16_MemoryWrite
+                0x0000000008934174                NES_mapper83_Reset
+                0x000000000892ecb4                NES_mapper6_HSync
+                0x0000000008921848                NES_mapper45_MAP45_set_CPU_bank4
+                0x00000000089344bc                NES_mapper86_Init
+                0x0000000008933e4c                NES_mapper79_Init
+                0x000000000891ad6c                NES_mapper5_MemoryReadLow
+                0x000000000892ed5c                NES_mapper7_MemoryWrite
+                0x000000000893217c                NES_mapper48_Reset
+                0x0000000008938c20                NES_mapper255_Reset
+                0x0000000008932ca0                NES_mapper62_Init
+                0x00000000089377c8                NES_mapper231_Reset
+                0x0000000008931cf0                NES_mapper46_MemoryWrite
+                0x0000000008930484                NES_mapper22_Reset
+                0x00000000089310b4                NES_mapper40_MemoryWrite
+                0x00000000089332b8                NES_mapper67_Init
+                0x000000000892e868                NES_mapper5_Init
+                0x000000000892f468                NES_mapper10_PPU_Latch_FDFE
+                0x0000000008923854                NES_mapper65_HSync
+                0x0000000008931184                NES_mapper41_Init
+                0x000000000892e444                NES_mapper_base_set_mirroring2
+                0x000000000892daf0                NES_mapper_base_MemoryWriteLow
+                0x000000000892e7d4                NES_mapper3_MemoryWrite
+                0x000000000892df04                NES_mapper_base_set_CPU_banks5
+                0x000000000891c04c                NES_mapper16_Reset
+                0x000000000892f7ac                NES_mapper11_MemoryWrite
+                0x00000000089304ec                NES_mapper23_Init
+                0x000000000892512c                NES_mapper88_MemoryWrite
+                0x000000000892f1f0                NES_mapper9_set_VROM_1000
+                0x0000000008921e3c                NES_mapper47_MMC3_set_CPU_banks
+                0x00000000089383cc                NES_mapper248_Reset
+                0x0000000008932f78                NES_mapper65_Reset
+                0x0000000008932c3c                NES_mapper60_Reset
+                0x0000000008930200                NES_mapper20_GetDiskSide
+                0x000000000893701c                NES_mapper187_Init
+                0x00000000089330f8                NES_mapper66_MemoryWriteSaveRAM
+                0x000000000892b2e0                NES_mapperNSF_Reset
+                0x0000000008927150                NES_mapper118_MMC3_set_CPU_banks
+                0x00000000089313a8                NES_mapper42_Init
+                0x0000000008932b04                NES_mapper57_Init
+                0x0000000008934e98                NES_mapper94_Init
+                0x0000000008930840                NES_mapper25_Reset
+                0x00000000089375a0                NES_mapper227_Init
+                0x0000000008938c90                NES_mapper255_MemoryReadLow
+                0x00000000089337bc                NES_mapper72_MemoryWrite
+                0x0000000008928b30                NES_mapper188_MemoryWrite
+                0x0000000008932f48                NES_mapper65_Init
+                0x000000000893668c                NES_mapper122_MemoryWriteSaveRAM
+                0x00000000089252bc                NES_mapper90_MemoryWrite
+                0x0000000008937144                NES_mapper187_HSync
+                0x0000000008938390                NES_mapper248_Init
+                0x0000000008938df4                NES_mapperNSF_MemoryWrite
+                0x000000000893849c                NES_mapper248_HSync
+                0x0000000008936500                NES_mapper119_Reset
+                0x0000000008930730                NES_mapper24_Init
+                0x000000000892b8ec                NES_UNIFmapper4_oMMC3PRG
+                0x000000000892f088                NES_mapper9_PPU_Latch_FDFE
+                0x0000000008924254                NES_mapper73_MemoryWrite
+                0x0000000008938130                NES_mapper244_Init
+                0x000000000892e1e8                NES_mapper_base_set_PPU_bank5
+                0x000000000892dc3c                NES_mapper_base_set_CPU_bank4
+                0x0000000008936380                NES_mapper118_Reset
+                0x000000000892db20                NES_mapper_base_PPU_Latch_RenderScreen
+                0x0000000008933070                NES_mapper66_Reset
+                0x0000000008936904                NES_mapper151_Init
+                0x0000000008936034                NES_mapper114_Init
+                0x00000000089255f8                NES_mapper90_Sync_Chr_Banks
+                0x0000000008934ca0                NES_mapper91_HSync
+                0x0000000008939098                NES_UNIFmapper2_MemoryWriteLow
+                0x000000000891987c                NES_mapper_base_set_PPU_banks8
+                0x00000000089318a0                NES_mapper45_HSync
+                0x0000000008936ca0                NES_mapper182_Init
+                0x0000000008925e3c                NES_mapper95_MMC3_set_PPU_banks
+                0x00000000089328c4                NES_mapper52_MemoryWriteSaveRAM
+                0x00000000089199b8                NES_mapper1_Reset
+                0x0000000008937c0c                NES_mapper237_Init
+                0x0000000008935cd4                NES_mapper112_Reset
+                0x0000000008933ee8                NES_mapper79_MemoryWriteLow
+                0x000000000893828c                NES_mapper245_Reset
+                0x00000000089322a0                NES_mapper49_Reset
+                0x0000000008930330                NES_mapper21_HSync
+                0x000000000892437c                NES_mapper75_MemoryWrite
+                0x0000000008936db4                NES_mapper183_Init
+                0x00000000089213a4                NES_mapper45_Reset
+                0x000000000891d62c                NES_mapper18_MemoryWrite
+                0x00000000089305f4                NES_mapper23_HSync
+                0x000000000892a778                NES_mapper243_MemoryWriteSaveRAM
+                0x0000000008938bcc                NES_mapper254_MemoryWriteSaveRAM
+                0x0000000008932354                NES_mapper49_MemoryWriteSaveRAM
+                0x000000000892f368                NES_mapper10_Reset
+                0x00000000089382dc                NES_mapper245_HSync
+                0x0000000008925ec0                NES_mapper100_Reset
+                0x0000000008927a50                NES_mapper160_MemoryWrite
+                0x0000000008933a68                NES_mapper75_Reset
+                0x0000000008933ff8                NES_mapper80_Reset
+                0x0000000008934664                NES_mapper87_Reset
+                0x000000000891dec8                NES_mapper19_MemoryWriteLow
+                0x000000000891b954                NES_mapper6_MemoryWriteLow
+                0x0000000008937f70                NES_mapper242_Reset
+                0x0000000008938f08                NES_UNIFmapper1_MemoryWrite
+                0x00000000089355a0                NES_mapper96_sync_PPU_banks
+                0x000000000893019c                NES_mapper20_SNSS_fixup
+                0x000000000892a614                NES_mapper243_MemoryWriteLow
+                0x0000000008939054                NES_UNIFmapper2_MemoryReadLow
+                0x0000000008925b48                NES_mapper92_MemoryWrite
+                0x0000000008938510                NES_mapper248_SNSS_fixup
+                0x000000000892debc                NES_mapper_base_set_VRAM_bank_unif
+                0x0000000008936304                NES_mapper117_HSync
+                0x0000000008935010                NES_mapper95_SNSS_fixup
+                0x000000000892db08                NES_mapper_base_HSync
+                0x0000000008938334                NES_mapper246_Init
+                0x0000000008934094                NES_mapper82_Init
+                0x000000000892e9f0                NES_mapper5_PPU_Latch_RenderScreen
+                0x0000000008936a34                NES_mapper180_Reset
+                0x000000000892db38                NES_mapper_base_GetDiskSide
+                0x0000000008934b58                NES_mapper90_MemoryWriteLow
+                0x0000000008923334                NES_mapper64_MemoryWrite
+                0x000000000893825c                NES_mapper245_Init
+                0x0000000008934544                NES_mapper86_MemoryWriteSaveRAM
+                0x0000000008921950                NES_mapper45_MAP45_set_PPU_banks
+                0x000000000893612c                NES_mapper115_Init
+                0x0000000008938be4                NES_mapper255_Init
+                0x000000000891a65c                NES_mapper4_MMC3_set_CPU_banks
+                0x0000000008934f5c                NES_mapper95_Init
+                0x0000000008932b90                NES_mapper58_Init
+                0x0000000008933660                NES_mapper71_Init
+                0x00000000089296ac                NES_mapper230_MemoryWrite
+                0x0000000008933e70                NES_mapper79_Reset
+                0x000000000893385c                NES_mapper73_Init
+                0x0000000008931b44                NES_mapper46_MemoryWriteSaveRAM
+                0x000000000892f554                NES_mapper10_set_VROM_0000
+                0x0000000008934f80                NES_mapper95_Reset
+                0x000000000891eb40                NES_mapper21_MemoryWrite
+                0x0000000008934bd0                NES_mapper91_Init
+                0x000000000892fd48                NES_mapper17_HSync
+                0x0000000008922598                NES_mapper49_MMC3_set_CPU_banks
+                0x0000000008937f4c                NES_mapper242_Init
+                0x0000000008932bb4                NES_mapper58_Reset
+                0x000000000892992c                NES_mapper234_MemoryReadSaveRAM
+                0x0000000008935e08                NES_mapper112_SNSS_fixup
+                0x0000000008932398                NES_mapper49_HSync
+                0x0000000008936788                NES_mapper140_Init
+                0x00000000089376a0                NES_mapper229_Reset
+                0x00000000089271b4                NES_mapper118_MMC3_set_PPU_banks
+                0x0000000008938e74                NES_UNIFmapper1_Init
+                0x000000000892db50                NES_mapper_base_DiskAccessed
+                0x0000000008927410                NES_mapper119_MemoryWrite
+                0x0000000008935438                NES_mapper96_MemoryWrite
+                0x0000000008921be0                NES_mapper47_MemoryWrite
+                0x00000000089248a8                NES_mapper82_MemoryWriteSaveRAM
+                0x0000000008933bb8                NES_mapper77_Reset
+                0x000000000893645c                NES_mapper118_HSync
+                0x000000000892e06c                NES_mapper_base_set_PPU_bank0
+                0x000000000892e0b8                NES_mapper_base_set_PPU_bank1
+                0x000000000893660c                NES_mapper122_Init
+                0x000000000893051c                NES_mapper23_Reset
+                0x0000000008938358                NES_mapper246_Reset
+                0x0000000008930adc                NES_mapper26_Init
+                0x000000000892e374                NES_mapper_base_set_PPU_bank11
+                0x000000000892fb38                NES_mapper16_Init
+                0x00000000089359e0                NES_mapper101_Init
+                0x0000000008937ce0                NES_mapper240_Reset
+                0x000000000892fae4                NES_mapper15_Init
+                0x0000000008931470                NES_mapper42_HSync
+                0x00000000089379b0                NES_mapper232_MemoryWrite
+                0x000000000891fbec                NES_mapper24_HSync
+                0x0000000008923c98                NES_mapper68_SyncMirror
+                0x00000000089218f8                NES_mapper45_MAP45_set_CPU_bank6
+                0x000000000892fc90                NES_mapper17_Init
+                0x000000000892153c                NES_mapper45_MemoryWrite
+                0x0000000008925dd8                NES_mapper95_MMC3_set_CPU_banks
+                0x000000000893388c                NES_mapper73_Reset
+                0x00000000089297e0                NES_mapper233_MemoryWrite
+                0x0000000008923608                NES_mapper65_MemoryWrite
+                0x000000000891dc4c                NES_mapper19_Reset
+                0x000000000892e304                NES_mapper_base_set_PPU_bank9
+                0x0000000008924038                NES_mapper70_MemoryWrite
+                0x0000000008934248                NES_mapper83_MemoryReadLow
+                0x0000000008931590                NES_mapper43_MemoryReadLow
+                0x0000000008939764                NES_UNIFmapper4_oMMC3CHR
+                0x0000000008934d08                NES_mapper92_Init
+                0x000000000893428c                NES_mapper83_HSync
+                0x000000000892fb08                NES_mapper15_Reset
+                0x0000000008928dcc                NES_mapper222_MemoryWrite
+                0x0000000008938094                NES_mapper243_Reset
+                0x00000000089321f0                NES_mapper48_HSync
+                0x00000000089356b0                NES_mapper97_Init
+                0x0000000008937ef0                NES_mapper241_MemoryWrite
+                0x000000000891d3f8                NES_mapper17_MemoryWriteLow
+                0x000000000892f984                NES_mapper13_MemoryWrite
+                0x00000000089301f0                NES_mapper20_GetDiskSideNum
+                0x00000000089371dc                NES_mapper188_Reset
+                0x0000000008936598                NES_mapper119_HSync
+                0x0000000008935ba4                NES_mapper105_Init
+                0x000000000891ba6c                NES_mapper9_MemoryWrite
+ .text          0x0000000008939a10     0x1ad8 nes/nes_rom.o
+                0x000000000893b448                NES_ROM_get_UNIF_psize_16k
+                0x000000000893b38c                NES_ROM_has_save_RAM
+                0x000000000893b3b8                NES_ROM_get_num_8k_VROM_banks
+                0x000000000893b2e8                NES_ROM_GetPathInfo
+                0x000000000893b3f4                NES_ROM_GetRomPath
+                0x000000000893b478                NES_ROM_GetROMInfoStr
+                0x000000000893b39c                NES_ROM_is_VSUnisystem
+                0x000000000893b430                NES_ROM_fds_id
+                0x000000000893b374                NES_ROM_get_mapper_num
+                0x000000000893b3d0                NES_ROM_get_ROM_banks
+                0x000000000893b418                NES_ROM_crc32
+                0x000000000893b43c                NES_ROM_get_size_SaveRAM
+                0x000000000893b400                NES_ROM_get_screen_mode
+                0x000000000893b40c                NES_ROM_get_GameTitleName
+                0x000000000893b3c4                NES_ROM_get_trainer
+                0x000000000893b354                NES_ROM_get_mirroring
+                0x0000000008939a10                NES_ROM_LoadRom
+                0x000000000893b380                NES_ROM_get_unifmapper_num
+                0x000000000893b3dc                NES_ROM_get_VROM_banks
+                0x000000000893b3ac                NES_ROM_get_num_16k_ROM_banks
+                0x000000000893b2d8                NES_ROM_has_trainer
+                0x000000000893b460                NES_ROM_get_UNIF_csize_8k
+                0x000000000893b424                NES_ROM_crc32_all
+                0x000000000893b3e8                NES_ROM_GetRomName
+ .text          0x000000000893b4e8     0x1f30 nes/snss.o
+                0x000000000893b79c                SaveSNSS
+                0x000000000893b4e8                LoadSNSS
+ .text          0x000000000893d418      0x53c nes/fileio.o
+                0x000000000893d7b8                GetModulePath
+                0x000000000893d538                NES_fread
+                0x000000000893d6b0                NES_fputc
+                0x000000000893d77c                NES_fclose
+                0x000000000893d85c                NES_PathAddBackslash
+                0x000000000893d564                PathFindFileName
+                0x000000000893d79c                NES_DeleteFile
+                0x000000000893d8f8                NES_PathRemoveExtension
+                0x000000000893d81c                GetSavePath
+                0x000000000893d8a0                NES_PathRemoveFileSpec
+                0x000000000893d418                NES_fgets
+                0x000000000893d67c                NES_fgetc
+                0x000000000893d7dc                GetStatePath
+                0x000000000893d708                NES_fseek
+                0x000000000893d6dc                NES_fwrite
+                0x000000000893d610                NES_fopen
+ .text          0x000000000893d954       0xa0 nes/nes_crc32.o
+                0x000000000893d9a4                CrcCalca
+                0x000000000893d954                CrcCalc
+ .text          0x000000000893d9f4     0x13b8 nes/libsnss/libsnss.o
+                0x000000000893deb0                SNSS_SkipNextBlock
+                0x000000000893ddb0                SNSS_CloseFile
+                0x000000000893e100                SNSS_WriteBlock
+                0x000000000893df58                SNSS_ReadBlock
+                0x000000000893db40                SNSS_GetErrorString
+                0x000000000893d9f4                SNSS_GetNextBlockType
+                0x000000000893dbd0                SNSS_OpenFile
+ .text          0x000000000893edac      0x5c4 emu_main.o
+                0x000000000893f30c                PSPEMU_SetFrameSpeed
+                0x000000000893ef54                PSPEMU_NES_Init
+                0x000000000893f2c4                PSPEMU_ApplyGraphicsConfig
+                0x000000000893f228                PSPEMU_GetDiskSideNum
+                0x000000000893f260                PSPEMU_GetDiskSide
+                0x000000000893f244                PSPEMU_SetDiskSide
+                0x000000000893f050                PSPEMU_SaveState
+                0x000000000893f27c                PSPEMU_ApplyGameGenie
+                0x000000000893f2e0                PSPEMU_ApplySoundConfig
+                0x000000000893edac                PSPEMU_DoFrame
+                0x000000000893f154                PSPEMU_Freeze
+                0x000000000893efbc                PSPEMU_LoadState
+                0x000000000893f174                PSPEMU_Thaw
+                0x000000000893f204                PSPEMU_SaveRAM
+ .text          0x000000000893f370      0x22c loadromimage.o
+                0x000000000893f438                load_rom_image
+                0x000000000893f370                funcUnzipCallback
+ .text          0x000000000893f59c       0xe4 soundmanager.o
+                0x000000000893f5e8                Snd_Lock
+                0x000000000893f5dc                Snd_GetCurrentPlayingBank
+                0x000000000893f5d4                Snd_GetSampleBits
+                0x000000000893f59c                Snd_GetSampleRate
+                0x000000000893f658                Snd_ClearBuffer
+                0x000000000893f650                Snd_UnLock
+ .text          0x000000000893f680     0x1400 screenmanager.o
+                0x000000000894040c                LoadThumnailFile
+                0x000000000893f82c                BitBlt_NormalScreen
+                0x000000000893fbcc                BitBlt_FullScreen
+                0x000000000893f680                Scr_BltScreen
+                0x0000000008940174                Scr_AssertPalette
+                0x0000000008940200                Scr_SetScreenMode
+                0x0000000008940280                Scr_Lock
+                0x0000000008940234                Scr_SetMessage
+                0x000000000893ff8c                BitBlt_X15_CROPPED
+                0x0000000008940208                Scr_ClearScreen
+                0x00000000089402b0                Scr_Unlock
+                0x000000000893fd68                BitBlt_X15
+                0x000000000893fae0                BitBlt_GPU
+                0x000000000893f8d8                pgGeInit
+                0x00000000089402b8                CreateThumnailFile
+ .text          0x0000000008940a80      0x9c4 inputmanager.o
+                0x0000000008940bc4                InputUpdatePad
+                0x0000000008940a80                InputUpdateRapid
+ .text          0x0000000008941444       0x7c startup.o
+                0x0000000008941444                _start
+ .text.stub     0x00000000089414c0      0x3a0 startup.o
+                0x0000000008941740                sceKernelLibcClock
+                0x0000000008941838                sceGeDrawSync
+                0x0000000008941820                sceGeListDeQueue
+                0x0000000008941700                sceAudio_1
+                0x00000000089414c0                sceDisplaySetMode
+                0x0000000008941690                scePowerGetResumeCount
+                0x0000000008941538                sceIoOpen
+                0x0000000008941590                scePower_Unkonow01
+                0x00000000089414e0                sceCtrlInit
+                0x00000000089416e8                scePowerGetBusClockFrequencyFloat
+                0x0000000008941628                scePowerGetBatteryElec
+                0x0000000008941720                sceAudio_5
+                0x0000000008941548                sceIoMkdir
+                0x0000000008941780                sceKernelExitThread
+                0x0000000008941568                DisableSuspend
+                0x0000000008941688                scePower_Unkonow11
+                0x0000000008941808                sceGeRestoreContext
+                0x00000000089415f8                scePower_Unkonow04
+                0x00000000089417a8                sceKernelClearEventFlag
+                0x0000000008941620                scePowerGetBatteryTemp
+                0x00000000089414f8                sceCtrlPeek
+                0x0000000008941730                sceAudio_7
+                0x00000000089414d8                sceDisplayWaitVblank
+                0x00000000089416c0                scePowerGetCpuClockFrequency
+                0x0000000008941830                sceGeListSync
+                0x00000000089417e0                sceGeEdramGetAddr
+                0x0000000008941800                sceGeSaveContext
+                0x0000000008941810                sceGeListEnQueue
+                0x00000000089416b8                scePowerSetBusClockFrequency
+                0x0000000008941638                scePower_Unkonow07
+                0x00000000089416f0                scePowerSetClockFrequency
+                0x0000000008941858                sceGeUnsetCallback
+                0x0000000008941650                scePowerLock
+                0x0000000008941598                scePowerTick
+                0x00000000089416c8                scePowerGetBusClockFrequency
+                0x00000000089416b0                scePowerSetCpuClockFrequency
+                0x0000000008941778                sceKernelStartThread
+                0x0000000008941570                EnableSuspend
+                0x00000000089414e8                sceCtrlSetAnalogMode
+                0x0000000008941560                sceIoRename
+                0x0000000008941708                sceAudio_2
+                0x00000000089414d0                sceDisplayWaitVblankStart
+                0x0000000008941850                sceGeSetCallback
+                0x00000000089416f8                sceAudio_0
+                0x00000000089417c0                sceKernelCreateCallback
+                0x0000000008941790                sceKernelCreateEventFlag
+                0x00000000089416d8                scePowerGetBusClockFrequencyInt
+                0x0000000008941840                sceGeBreak
+                0x0000000008941788                sceKernelSleepThread
+                0x00000000089415b8                scePowerBatteryUpdateInfo
+                0x00000000089415d0                scePowerIsPowerOnline
+                0x0000000008941520                sceIoWrite
+                0x00000000089416d0                scePowerGetCpuClockFrequencyInt
+                0x0000000008941818                sceGeListEnQueueHead
+                0x00000000089417a0                sceKernelSetEventFlag
+                0x0000000008941750                sceKernelLibcGettimeofday
+                0x0000000008941718                sceAudio_4
+                0x00000000089416a8                scePower_Unkonow12
+                0x0000000008941680                scePower_Unkonow10
+                0x00000000089417d0                sceKernelDeleteThread
+                0x0000000008941760                sceDmacMemcpy
+                0x0000000008941660                scePowerCancelRequest
+                0x0000000008941588                scePower_Unkonow00
+                0x00000000089417f8                sceGeGetMtx
+                0x00000000089415a0                scePowerGetIdleTimer
+                0x0000000008941630                scePowerGetBatteryVolt
+                0x00000000089417b0                sceKernelWaitEventFlag
+                0x00000000089415d8                scePowerIsBatteryExist
+                0x0000000008941768                sceDmacTryMemcpy
+                0x0000000008941668                scePowerIsRequest
+                0x0000000008941648                scePower_Unkonow09
+                0x0000000008941608                scePower_Unkonow06
+                0x0000000008941770                sceKernelCreateThread
+                0x0000000008941758                sceKernelDcacheWritebackAll
+                0x0000000008941540                sceIoRemove
+                0x00000000089416e0                scePowerGetCpuClockFrequencyFloat
+                0x00000000089415a8                scePowerIdleTimerEnable
+                0x0000000008941518                sceIoRead
+                0x00000000089417d8                sceGeEdramGetSize
+                0x00000000089417c8                sceKernelWaitThreadEnd
+                0x0000000008941640                scePower_Unkonow08
+                0x0000000008941530                sceIoClose
+                0x0000000008941550                sceIoRmdir
+                0x00000000089417b8                KernelPollCallbacks
+                0x0000000008941710                sceAudio_3
+                0x00000000089415c0                scePower_Unkonow02
+                0x0000000008941678                scePowerRequestSuspend
+                0x0000000008941748                sceKernelLibcTime
+                0x0000000008941848                sceGeContinue
+                0x00000000089414f0                sceCtrlRead
+                0x0000000008941658                scePowerUnlock
+                0x0000000008941510                sceIoDclose
+                0x0000000008941618                scePowerGetBatteryLifeTime
+                0x00000000089417e8                sceGeEdramSetAddrTranslation
+                0x00000000089415f0                scePowerIsLowBattery
+                0x0000000008941580                SetExitCallback
+                0x00000000089415c8                scePower_Unkonow03
+                0x00000000089417f0                sceGeGetCmd
+                0x00000000089415e0                scePowerIsBatteryCharging
+                0x0000000008941728                sceAudio_6
+                0x0000000008941698                scePowerRegisterCallback
+                0x0000000008941528                sceIoLseek
+                0x0000000008941670                scePowerRequestStandby
+                0x0000000008941798                sceKernelDeleteEventFlag
+                0x0000000008941610                scePowerGetBatteryLifePercent
+                0x0000000008941508                sceIoDread
+                0x00000000089416a0                scePowerUnregisterCallback
+                0x0000000008941578                sceKernelExitGame
+                0x00000000089415b0                scePowerIdleTimerDisable
+                0x00000000089414c8                sceDisplaySetFrameBuf
+                0x0000000008941600                scePower_Unkonow05
+                0x00000000089415e8                scePowerGetBatteryChargingStatus
+                0x0000000008941558                sceIoDevctl
+                0x0000000008941738                sceAudio_8
+                0x0000000008941500                sceIoDopen
+                0x0000000008941828                sceGeListUpdateStallAddr
+ .text          0x0000000008941860      0x430 main.o
+                0x0000000008941b38                exit_callback
+                0x0000000008941bd8                CallbackThread
+                0x0000000008941b80                power_callback
+                0x0000000008941860                xmain
+                0x0000000008941c30                SetupCallbacks
+ .text          0x0000000008941c90     0x14bc pg.o
+                0x0000000008942254                pgGetVramAddr
+                0x0000000008942d28                pgiInit
+                0x000000000894290c                pgcCls
+                0x00000000089421fc                pgWaitVn
+                0x0000000008942238                pgWaitV
+                0x0000000008942974                pgcPutchar_nocontrol
+                0x0000000008942eec                pgMain
+                0x00000000089425c8                pgFillBox
+                0x0000000008942bb4                pgcPuthex2
+                0x0000000008941c90                pgBitBlt
+                0x0000000008942e8c                pgaOutBlocking
+                0x0000000008942c10                pgcPuthex8
+                0x0000000008942630                pgFillvram
+                0x0000000008941e38                Draw_Char_Hankaku
+                0x00000000089430dc                pguGetWorkdir
+                0x00000000089428f4                pgcSetmag
+                0x0000000008942458                pgPrint4
+                0x0000000008942e20                pgaTerm
+                0x000000000894266c                pgScreenFrame
+                0x0000000008942868                pgcLocate
+                0x0000000008942144                readpad
+                0x00000000089428d0                pgcDraw
+                0x0000000008942744                pgScreenFlipV
+                0x0000000008942d50                pgaInit
+                0x0000000008942284                pgInit
+                0x0000000008942390                pgPrint2
+                0x0000000008941ef8                Draw_Char_Zenkaku
+                0x0000000008941d3c                pgPutChar
+                0x0000000008942a68                pgcPutchar
+                0x00000000089428a8                pgcColor
+                0x00000000089430d0                pguGetMypath
+                0x0000000008942d44                pgaSetChannelCallback
+                0x0000000008942798                mh_print
+                0x00000000089422c8                pgPrint
+                0x0000000008942e0c                pgaTermPre
+                0x0000000008942520                pgDrawFrame
+                0x00000000089426f8                pgScreenFlip
+ .text          0x000000000894314c     0x1038 menu.o
+                0x000000000894314c                load_config
+                0x000000000894332c                setkeydefault
+                0x00000000089433b8                load_menu_bg
+                0x0000000008943fbc                bgbright_change
+                0x0000000008944094                menu_frame
+                0x00000000089434d8                rin_menu
+                0x0000000008943e24                save_config
+                0x0000000008943d2c                draw_load_rom_progress
+                0x0000000008943ea8                rgbTransp
+ .text          0x0000000008944184      0xb94 filer.o
+                0x0000000008944ac8                SJISCopy
+                0x0000000008944184                cmpFile
+                0x0000000008944b7c                sort
+                0x00000000089446c8                getFilePath
+                0x0000000008944330                getDir
+                0x0000000008944c80                getExtId
+ .text          0x0000000008944d18       0xb8 sound.o
+                0x0000000008944d18                wavoutInit
+ .text          0x0000000008944dd0       0xb4 debug/debug.o
+                0x0000000008944dd0                OutputDebugString
+ .text          0x0000000008944e84      0x5e4 string.o
+                0x00000000089450c8                _strcat
+                0x000000000894512c                _strcmp
+                0x0000000008944e84                _atoh
+                0x000000000894534c                _itoa32
+                0x0000000008945004                _strncpy
+                0x0000000008945414                _atoi
+                0x0000000008944f44                _memcpy
+                0x0000000008944f78                _memset
+                0x0000000008945268                _itoa
+                0x0000000008944fc0                _strcpy
+                0x0000000008944efc                _memcmp
+                0x0000000008945200                _strrev
+                0x0000000008945158                _strncmp
+                0x0000000008945078                _strrchr
+                0x00000000089451a0                _stricmp
+                0x0000000008944f98                _strlen
+ .text          0x0000000008945468     0x2e58 menu_submenu.o
+                0x0000000008945468                GetStateTime
+                0x0000000008945f94                DiskSystemBiosCheck
+                0x0000000008947398                submenu_menucolorconfig
+                0x0000000008947ba0                submenu_keyconfig
+                0x0000000008945c80                submenu_diskchange
+                0x0000000008946d8c                submenu_soundconfig
+                0x000000000894687c                MessageBox
+                0x0000000008946954                submenu_graphicsconfig
+                0x0000000008945708                submenu_stateslot
+                0x00000000089460c0                submenu_preferencesconfig
+ .text          0x00000000089482c0      0x1dc unzip/unziplib.a(zlibInterface.o)
+                0x0000000008948490                Unzip_setCallback
+                0x00000000089482c0                Unzip_execExtract
+ .text          0x000000000894849c     0x3ad8 unzip/unziplib.a(unzip.o)
+                0x0000000008949cb8                unzOpenCurrentFilePassword
+                0x000000000894953c                unzReadCurrentFile
+                0x0000000008949c24                unzGoToFilePos
+                0x0000000008948e68                unzLocateFile
+                0x0000000008949108                unzOpenCurrentFile3
+                0x0000000008948e08                unzGoToFirstFile
+                0x0000000008949c90                unzOpenCurrentFile
+                0x0000000008949ce0                unzOpenCurrentFile2
+                0x0000000008949acc                unzGetGlobalInfo
+                0x0000000008949d3c                unzGetLocalExtrafield
+                0x0000000008949af0                unzGetCurrentFileInfo
+                0x0000000008949bec                unzGetFilePos
+                0x0000000008949f18                unzSetOffset
+                0x0000000008949ed4                unzGetOffset
+                0x0000000008949b38                unzGoToNextFile
+                0x00000000089498dc                unzCloseCurrentFile
+                0x0000000008949d18                unzeof
+                0x0000000008949dfc                unzGetGlobalComment
+                0x0000000008949cfc                unztell
+                0x000000000894849c                unzOpen2
+                0x0000000008949998                unzStringFileNameCompare
+                0x0000000008949a6c                unzClose
+                0x0000000008949a50                unzOpen
+ .text          0x000000000894bf74      0x474 unzip/unziplib.a(zlibFileMemory.o)
+                0x000000000894c2fc                ___ftell
+                0x000000000894c3a0                _(float, long double,...)(...)
+                0x000000000894c254                ___strcat
+                0x000000000894c2b8                ___fopen
+                0x000000000894bf74                ___itoa
+                0x000000000894c368                ___fread
+                0x000000000894c308                ___fseek
+                0x000000000894c360                ___ferror
+                0x000000000894c120                ___memcpy
+                0x000000000894c2f4                ___fwrite
+                0x000000000894c154                ___strcmp
+                0x000000000894c180                ___strlen
+                0x000000000894c33c                ___fclose
+                0x000000000894c3a8                ___calloc
+                0x000000000894c1a8                ___strcpy
+                0x000000000894c1ec                ___strrev
+                0x000000000894c058                ___itoa32
+                0x000000000894c3b0                ___malloc
+ .text          0x000000000894c3e8      0x19c unzip/unziplib.a(crc32.o)
+                0x000000000894c3f4                crc32
+                0x000000000894c3e8                get_crc_table
+ .text          0x000000000894c584     0x1f10 unzip/unziplib.a(inflate.o)
+                0x000000000894e03c                inflateCopy
+                0x000000000894c6e4                inflate
+                0x000000000894e2f4                inflateSyncPoint
+                0x000000000894e260                inflateInit_
+                0x000000000894e200                inflateReset
+                0x000000000894de0c                inflateSync
+                0x000000000894dd08                inflateSetDictionary
+                0x000000000894e284                inflateEnd
+                0x000000000894c584                inflateInit2_
+ .text          0x000000000894e494      0x558 unzip/unziplib.a(inftrees.o)
+                0x000000000894e494                inflate_table
+ .text          0x000000000894e9ec      0x1ec unzip/unziplib.a(ioapi.o)
+                0x000000000894ead8                fseek_file_func
+                0x000000000894ea6c                fread_file_func
+                0x000000000894eb44                fclose_file_func
+                0x000000000894eb7c                fill_fopen_filefunc
+                0x000000000894eabc                ftell_file_func
+                0x000000000894eb60                ferror_file_func
+                0x000000000894ea94                fwrite_file_func
+                0x000000000894e9ec                fopen_file_func
+ .text          0x000000000894ebd8       0x74 unzip/unziplib.a(zutil.o)
+                0x000000000894ebe0                zlibVersion
+                0x000000000894ebd8                zlibCompileFlags
+                0x000000000894ec30                zcfree
+                0x000000000894ebec                zError
+                0x000000000894ec0c                zcalloc
+ .text          0x000000000894ec4c      0x18c unzip/unziplib.a(adler32.o)
+                0x000000000894ec4c                adler32
+ .text          0x000000000894edd8      0x528 unzip/unziplib.a(inffast.o)
+                0x000000000894edd8                inflate_fast
+ *(.gnu.warning)
+ *(.mips16.fn.*)
+ *(.mips16.call.*)
+
+.fini
+ *(.fini)
+                0x000000000894f300                PROVIDE (__etext, .)
+                0x000000000894f300                PROVIDE (_etext, .)
+                0x000000000894f300                PROVIDE (etext, .)
+
+.rodata         0x000000000894f300    0x2acf8
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x000000000894f300       0x30 nes/cpu/nes_6502.o
+ .rodata        0x000000000894f330       0x50 nes/ppu/nes_ppu.o
+ .rodata        0x000000000894f380       0x2c nes/apu/fdssnd.o
+ *fill*         0x000000000894f3ac        0x4 00
+ .rodata        0x000000000894f3b0      0x188 nes/apu/nes_apu.o
+                0x000000000894f430                dmc_clocks
+ .rodata        0x000000000894f538       0x30 nes/apu/nes_apu_wrapper.o
+ .rodata        0x000000000894f568       0x38 nes/apu/nes_fme7.o
+ .rodata        0x000000000894f5a0       0x78 nes/apu/nes_mmc5.o
+ .rodata        0x000000000894f618       0x20 nes/apu/nes_n106.o
+ .rodata        0x000000000894f638       0xfc nes/apu/nes_vrc7.o
+ *fill*         0x000000000894f734        0x4 00
+ .rodata        0x000000000894f738     0x1308 nes/nes.o
+ .rodata        0x0000000008950a40      0xf80 nes/nes_mapper.o
+ .rodata        0x00000000089519c0       0xb0 nes/nes_rom.o
+ .rodata        0x0000000008951a70      0x848 nes/snss.o
+ .rodata        0x00000000089522b8      0x400 nes/nes_crc32.o
+                0x00000000089522b8                crctable
+ .rodata        0x00000000089526b8      0x138 nes/libsnss/libsnss.o
+ .rodata        0x00000000089527f0       0x90 emu_main.o
+ .rodata        0x0000000008952880       0x30 loadromimage.o
+ .rodata        0x00000000089528b0       0x30 soundmanager.o
+ .rodata        0x00000000089528e0       0xa8 screenmanager.o
+ .rodata        0x0000000008952988      0x1a8 inputmanager.o
+ .rodata.entrytable
+                0x0000000008952b30       0x14 startup.o
+ .rodata.stubmodulename
+                0x0000000008952b44       0xc8 startup.o
+ .rodata.stubidtable
+                0x0000000008952c0c      0x1d0 startup.o
+ *fill*         0x0000000008952ddc        0x4 00
+ .rodata        0x0000000008952de0       0x98 main.o
+                0x0000000008952e10                stExtRom
+ .rodata        0x0000000008952e78    0x22900 pg.o
+                0x0000000008952e78                font
+                0x00000000089537a0                hankaku_font10
+                0x0000000008953de0                zenkaku_font10
+ .rodata        0x0000000008975778     0x2ef8 menu.o
+                0x0000000008975868                coltbl
+ .rodata        0x0000000008978670       0x20 filer.o
+ .rodata        0x0000000008978690       0x10 debug/debug.o
+ .rodata        0x00000000089786a0      0x7f8 menu_submenu.o
+ .rodata        0x0000000008978e98       0x54 unzip/unziplib.a(unzip.o)
+                0x0000000008978e98                unz_copyright
+ .rodata        0x0000000008978eec      0x400 unzip/unziplib.a(crc32.o)
+ .rodata        0x00000000089792ec      0xae0 unzip/unziplib.a(inflate.o)
+ .rodata        0x0000000008979dcc      0x130 unzip/unziplib.a(inftrees.o)
+                0x0000000008979dcc                inflate_copyright
+ .rodata        0x0000000008979efc       0xa8 unzip/unziplib.a(zutil.o)
+                0x0000000008979f7c                z_errmsg
+ .rodata        0x0000000008979fa4       0x54 unzip/unziplib.a(inffast.o)
+
+.rodata1
+ *(.rodata1)
+
+.sdata2
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+
+.sbss2
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+                0x000000000897a078                . = (ALIGN (0x80) + (. & 0x7f))
+                0x000000000897a078                . = ALIGN (0x4)
+                0x000000000897a078                PROVIDE (__preinit_array_start, .)
+
+.preinit_array
+ *(.preinit_array)
+                0x000000000897a078                PROVIDE (__preinit_array_end, .)
+                0x000000000897a078                PROVIDE (__init_array_start, .)
+
+.init_array
+ *(.init_array)
+                0x000000000897a078                PROVIDE (__init_array_end, .)
+                0x000000000897a078                PROVIDE (__fini_array_start, .)
+
+.fini_array
+ *(.fini_array)
+                0x000000000897a078                PROVIDE (__fini_array_end, .)
+
+.data           0x000000000897a078     0x78d0
+                0x000000000897a078                _fdata = .
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x000000000897a078      0x400 nes/cpu/nes6502.o
+ .data          0x000000000897a478       0x10 nes/cpu/nes_6502.o
+ .data          0x000000000897a488       0x10 nes/ppu/nes_ppu.o
+ .data          0x000000000897a498       0x68 nes/apu/fdssnd.o
+                0x000000000897a4e0                fds_ext
+ .data          0x000000000897a500       0x30 nes/apu/nes_apu_wrapper.o
+                0x000000000897a510                g_APU
+ .data          0x000000000897a530     0x4108 nes/apu/nes_exsound.o
+ .data          0x000000000897e638      0x318 nes/apu/nes_fme7.o
+                0x000000000897e930                fme7_ext
+ .data          0x000000000897e950       0xb8 nes/apu/nes_mmc5.o
+                0x000000000897e9e8                mmc5_ext
+ .data          0x000000000897ea08       0x50 nes/apu/nes_n106.o
+                0x000000000897ea38                n106_ext
+ .data          0x000000000897ea58       0x38 nes/apu/nes_vrc6.o
+                0x000000000897ea70                vrc6_ext
+ .data          0x000000000897ea90     0x28f0 nes/apu/nes_vrc7.o
+                0x0000000008981360                vrc7_ext
+ .data          0x0000000008981380       0xf0 nes/nes.o
+                0x00000000089813b0                NES_preset_palette
+ .data          0x0000000008981470       0x10 nes/nes_mapper.o
+ .data          0x0000000008981480       0x10 nes/snss.o
+ .data          0x0000000008981490       0x28 emu_main.o
+ .data          0x00000000089814b8       0x10 soundmanager.o
+ .data          0x00000000089814c8      0x3a8 screenmanager.o
+ .data          0x0000000008981870       0x38 inputmanager.o
+ .data          0x00000000089818a8       0x10 main.o
+ .data          0x00000000089818b8       0x48 menu.o
+ .data          0x0000000008981900       0x48 menu_submenu.o
+
+.lib.ent        0x0000000008981948       0x10
+ .lib.ent       0x0000000008981948       0x10 startup.o
+
+.lib.ent.btm    0x0000000008981958        0x4
+ .lib.ent.btm   0x0000000008981958        0x4 startup.o
+
+.lib.stub       0x000000000898195c       0xdc
+ .lib.stub      0x000000000898195c       0xdc startup.o
+
+.lib.stub.btm   0x0000000008981a38        0x4
+ .lib.stub.btm  0x0000000008981a38        0x4 startup.o
+
+.xodata.sceModuleInfo
+                0x0000000008981a40       0x40
+ .xodata.sceModuleInfo
+                0x0000000008981a40       0x40 startup.o
+
+.data1
+ *(.data1)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table)
+
+.dynamic
+ *(.dynamic)
+
+.ctors
+ *crtbegin*.o(.ctors)
+ *(EXCLUDE_FILE(*crtend*.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin*.o(.dtors)
+ *(EXCLUDE_FILE(*crtend*.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+                0x0000000008989a70                _gp = (ALIGN (0x10) + 0x7ff0)
+
+.got
+ *(.got.plt)
+ *(.got)
+
+.lit8
+ *(.lit8)
+
+.lit4
+ *(.lit4)
+
+.sdata          0x0000000008981a80      0x33c
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0x0000000008981a80        0x8 nes/cpu/nes6502.o
+ .sdata         0x0000000008981a88        0x1 nes/ppu/nes_ppu.o
+ *fill*         0x0000000008981a89        0x7 00
+ .sdata         0x0000000008981a90        0x8 nes/apu/fdssnd.o
+ .sdata         0x0000000008981a98        0xc nes/apu/nes_apu.o
+ *fill*         0x0000000008981aa4        0x4 00
+ .sdata         0x0000000008981aa8        0x8 nes/apu/nes_vrc7.o
+ .sdata         0x0000000008981ab0       0x28 nes/nes.o
+ .sdata         0x0000000008981ad8        0x8 nes/nes_mapper.o
+ .sdata         0x0000000008981ae0       0x48 nes/nes_rom.o
+ .sdata         0x0000000008981b28       0x18 nes/fileio.o
+                0x0000000008981b28                g_DBbufLen
+ .sdata         0x0000000008981b40       0x38 nes/libsnss/libsnss.o
+ .sdata         0x0000000008981b78       0x28 emu_main.o
+                0x0000000008981b7c                cur_time
+                0x0000000008981b80                g_ulFPS
+                0x0000000008981b78                last_frame_time
+ .sdata         0x0000000008981ba0        0x4 soundmanager.o
+ *fill*         0x0000000008981ba4        0x4 00
+ .sdata         0x0000000008981ba8       0x20 screenmanager.o
+                0x0000000008981bb8                g_nRenderMsgCount
+ .sdata         0x0000000008981bc8       0x48 inputmanager.o
+                0x0000000008981bd8                stKeyState
+ .sdata         0x0000000008981c10       0x48 main.o
+                0x0000000008981c10                bSleep
+ .sdata         0x0000000008981c58       0x18 pg.o
+                0x0000000008981c5c                pga_ready
+                0x0000000008981c64                pg_terminate
+                0x0000000008981c60                pga_terminate
+ .sdata         0x0000000008981c70       0x50 menu.o
+                0x0000000008981c80                StateSlot
+                0x0000000008981c84                nSelRomFiler
+                0x0000000008981c88                nSelGenieFiler
+ .sdata         0x0000000008981cc0       0x18 filer.o
+ .sdata         0x0000000008981cd8        0xc sound.o
+                0x0000000008981cdc                g_BeforePlayBank
+                0x0000000008981ce0                wavout_enable
+                0x0000000008981cd8                g_CurPlayBank
+ *fill*         0x0000000008981ce4        0x4 00
+ .sdata         0x0000000008981ce8       0xa8 menu_submenu.o
+ .sdata         0x0000000008981d90        0x4 unzip/unziplib.a(zlibInterface.o)
+                0x0000000008981d90                ___zlib_pfuncCallback
+ .sdata         0x0000000008981d94        0x8 unzip/unziplib.a(unzip.o)
+ .sdata         0x0000000008981d9c        0x8 unzip/unziplib.a(zlibFileMemory.o)
+                0x0000000008981d9c                ___zlibInFile
+ .sdata         0x0000000008981da4        0xc unzip/unziplib.a(ioapi.o)
+ .sdata         0x0000000008981db0        0xc unzip/unziplib.a(zutil.o)
+                0x0000000008981dbc                _edata = .
+                0x0000000008981dbc                PROVIDE (edata, .)
+                0x0000000008981dbc                __bss_start = .
+                0x0000000008981dbc                _fbss = .
+
+.sbss           0x0000000008981dc0       0xb8
+                0x0000000008981dc0                PROVIDE (__sbss_start, .)
+                0x0000000008981dc0                PROVIDE (___sbss_start, .)
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x0000000008981dc0       0x18 nes/apu/fdssnd.o
+ .sbss          0x0000000008981dd8        0x4 inputmanager.o
+ *(.scommon)
+ .scommon       0x0000000008981ddc        0x4 nes/fileio.o
+                                          0x0 (size before relaxing)
+                0x0000000008981ddc                g_DBbufPtr
+ .scommon       0x0000000008981de0        0xc emu_main.o
+                                          0x0 (size before relaxing)
+                0x0000000008981de0                Mode2FramePeriodTime
+                0x0000000008981de4                NormalFramePeriodTime
+                0x0000000008981de8                Mode1FramePeriodTime
+ .scommon       0x0000000008981dec        0x4 screenmanager.o
+                                          0x0 (size before relaxing)
+                0x0000000008981dec                g_nRenderMsgLen
+ .scommon       0x0000000008981df0       0x14 inputmanager.o
+                                          0x0 (size before relaxing)
+                0x0000000008981df0                now_sensor_x
+                0x0000000008981df8                g_PadBit
+                0x0000000008981e00                now_sensor_y
+ *fill*         0x0000000008981e04        0x4 00
+ .scommon       0x0000000008981e08       0x64 pg.o
+                                          0x0 (size before relaxing)
+                0x0000000008981e08                pga_handle
+                0x0000000008981e10                pgc_csr_x
+                0x0000000008981e18                pga_threadhandle
+                0x0000000008981e20                pgc_bgcolor
+                0x0000000008981e28                new_pad
+                0x0000000008981e30                pgc_fgdraw
+                0x0000000008981e34                pg_showframe
+                0x0000000008981e38                pgc_bgdraw
+                0x0000000008981e3c                pg_screenmode
+                0x0000000008981e40                pg_drawframe
+                0x0000000008981e48                pgc_fgcolor
+                0x0000000008981e50                pga_callback
+                0x0000000008981e58                pgc_csr_y
+                0x0000000008981e60                pgc_mag
+                0x0000000008981e64                old_pad
+                0x0000000008981e68                now_pad
+ .scommon       0x0000000008981e6c        0x1 menu.o
+                                          0x0 (size before relaxing)
+                0x0000000008981e6c                g_bEnableBitmap
+ *fill*         0x0000000008981e6d        0x3 00
+ .scommon       0x0000000008981e70        0x4 filer.o
+                                          0x0 (size before relaxing)
+                0x0000000008981e70                nfiles
+ .scommon       0x0000000008981e74        0x4 unzip/unziplib.a(zlibFileMemory.o)
+                                          0x0 (size before relaxing)
+                0x0000000008981e74                ___zlibAllocBuffPointer
+                0x0000000008981e78                PROVIDE (__sbss_end, .)
+                0x0000000008981e78                PROVIDE (___sbss_end, .)
+
+.bss            0x0000000008981e80   0x5959a8
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000000008981e80     0x2038 nes/cpu/nes6502.o
+ .bss           0x0000000008983eb8      0x2c0 nes/apu/nes_apu.o
+ .bss           0x0000000008984178      0x100 screenmanager.o
+ .bss           0x0000000008984278    0x5fa38 menu.o
+ *(COMMON)
+ COMMON         0x00000000089e3cb0     0x93c4 nes/ppu/nes_ppu.o
+                                          0x0 (size before relaxing)
+                0x00000000089e3cb0                g_PPU
+ *fill*         0x00000000089ed074        0x4 00
+ COMMON         0x00000000089ed078    0x18e90 nes/apu/nes_apu.o
+                                          0x0 (size before relaxing)
+                0x00000000089ed078                g_apu_t
+ COMMON         0x0000000008a05f08    0x20dd4 nes/nes.o
+                                          0x0 (size before relaxing)
+                0x0000000008a05f08                g_NES
+ *fill*         0x0000000008a26cdc        0x4 00
+ COMMON         0x0000000008a26ce0       0x1c nes/nes_config.o
+                                          0x0 (size before relaxing)
+                0x0000000008a26ce0                g_NESConfig
+ *fill*         0x0000000008a26cfc        0x4 00
+ COMMON         0x0000000008a26d00    0x420ec nes/nes_mapper.o
+                                          0x0 (size before relaxing)
+                0x0000000008a26d00                g_NESmapper
+ *fill*         0x0000000008a68dec        0x4 00
+ COMMON         0x0000000008a68df0   0x28a830 nes/nes_rom.o
+                                          0x0 (size before relaxing)
+                0x0000000008a68df0                g_ROM
+                0x0000000008be9620                g_ReadRomImage
+ COMMON         0x0000000008cf3620   0x100000 nes/fileio.o
+                                          0x0 (size before relaxing)
+                0x0000000008cf3620                g_DBBuf
+ COMMON         0x0000000008df3620     0xb9fc nes/libsnss/libsnss.o
+                                          0x0 (size before relaxing)
+                0x0000000008df3620                g_SNSSObj
+ *fill*         0x0000000008dff01c        0x4 00
+ COMMON         0x0000000008dff020    0x11250 screenmanager.o
+                                          0x0 (size before relaxing)
+                0x0000000008dff020                g_szRenderMsg
+                0x0000000008dff070                g_Pal
+                0x0000000008dff270                g_ScrBuf
+ COMMON         0x0000000008e10270      0x8a8 main.o
+                                          0x0 (size before relaxing)
+                0x0000000008e10270                setting
+                0x0000000008e10718                szLastGeniePath
+                0x0000000008e10918                RomPath
+ COMMON         0x0000000008e10b18      0x410 pg.o
+                                          0x0 (size before relaxing)
+                0x0000000008e10b18                paddata
+                0x0000000008e10b28                pg_workdir
+                0x0000000008e10d28                pg_mypath
+ COMMON         0x0000000008e10f28    0x3fc00 menu.o
+                                          0x0 (size before relaxing)
+                0x0000000008e10f28                g_bgBitmap
+ COMMON         0x0000000008e50b28    0xb2100 filer.o
+                                          0x0 (size before relaxing)
+                0x0000000008e50b28                sortfiles
+                0x0000000008e52b28                FilerMsg
+                0x0000000008e52c28                files
+ COMMON         0x0000000008f02c28     0x2c00 sound.o
+                                          0x0 (size before relaxing)
+                0x0000000008f02c28                g_SoundBufSilent
+                0x0000000008f03028                g_SoundBuf
+ COMMON         0x0000000008f05828     0x2000 menu_submenu.o
+                                          0x0 (size before relaxing)
+                0x0000000008f05828                g_BiosCheckBuf
+ COMMON         0x0000000008f07828    0x10000 unzip/unziplib.a(zlibFileMemory.o)
+                                          0x0 (size before relaxing)
+                0x0000000008f07828                ___zlibAllocBuff
+                0x0000000008f17828                . = ALIGN (0x4)
+                0x0000000008f17828                . = ALIGN (0x4)
+                0x0000000008f17828                _end = .
+                0x0000000008f17828                PROVIDE (end, .)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000      0x306
+ *(.comment)
+ .comment       0x0000000000000000       0x12 nes/cpu/nes6502.o
+ .comment       0x0000000000000012       0x12 nes/cpu/nes_6502.o
+ .comment       0x0000000000000024       0x12 nes/ppu/nes_ppu.o
+ .comment       0x0000000000000036       0x12 nes/apu/fdssnd.o
+ .comment       0x0000000000000048       0x12 nes/apu/nes_apu.o
+ .comment       0x000000000000005a       0x12 nes/apu/nes_apu_wrapper.o
+ .comment       0x000000000000006c       0x12 nes/apu/nes_exsound.o
+ .comment       0x000000000000007e       0x12 nes/apu/nes_fme7.o
+ .comment       0x0000000000000090       0x12 nes/apu/nes_mmc5.o
+ .comment       0x00000000000000a2       0x12 nes/apu/nes_n106.o
+ .comment       0x00000000000000b4       0x12 nes/apu/nes_vrc6.o
+ .comment       0x00000000000000c6       0x12 nes/apu/nes_vrc7.o
+ .comment       0x00000000000000d8       0x12 nes/nes.o
+ .comment       0x00000000000000ea       0x12 nes/nes_config.o
+ .comment       0x00000000000000fc       0x12 nes/nes_mapper.o
+ .comment       0x000000000000010e       0x12 nes/nes_rom.o
+ .comment       0x0000000000000120       0x12 nes/snss.o
+ .comment       0x0000000000000132       0x12 nes/fileio.o
+ .comment       0x0000000000000144       0x12 nes/nes_crc32.o
+ .comment       0x0000000000000156       0x12 nes/libsnss/libsnss.o
+ .comment       0x0000000000000168       0x12 emu_main.o
+ .comment       0x000000000000017a       0x12 loadromimage.o
+ .comment       0x000000000000018c       0x12 soundmanager.o
+ .comment       0x000000000000019e       0x12 screenmanager.o
+ .comment       0x00000000000001b0       0x12 inputmanager.o
+ .comment       0x00000000000001c2       0x12 main.o
+ .comment       0x00000000000001d4       0x12 pg.o
+ .comment       0x00000000000001e6       0x12 menu.o
+ .comment       0x00000000000001f8       0x12 filer.o
+ .comment       0x000000000000020a       0x12 sound.o
+ .comment       0x000000000000021c       0x12 debug/debug.o
+ .comment       0x000000000000022e       0x12 string.o
+ .comment       0x0000000000000240       0x12 menu_submenu.o
+ .comment       0x0000000000000252       0x12 unzip/unziplib.a(zlibInterface.o)
+ .comment       0x0000000000000264       0x12 unzip/unziplib.a(unzip.o)
+ .comment       0x0000000000000276       0x12 unzip/unziplib.a(zlibFileMemory.o)
+ .comment       0x0000000000000288       0x12 unzip/unziplib.a(crc32.o)
+ .comment       0x000000000000029a       0x12 unzip/unziplib.a(inflate.o)
+ .comment       0x00000000000002ac       0x12 unzip/unziplib.a(inftrees.o)
+ .comment       0x00000000000002be       0x12 unzip/unziplib.a(ioapi.o)
+ .comment       0x00000000000002d0       0x12 unzip/unziplib.a(zutil.o)
+ .comment       0x00000000000002e2       0x12 unzip/unziplib.a(adler32.o)
+ .comment       0x00000000000002f4       0x12 unzip/unziplib.a(inffast.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.gptab.sdata
+ *(.gptab.data)
+ *(.gptab.sdata)
+
+.gptab.sbss
+ *(.gptab.bss)
+ *(.gptab.sbss)
+OUTPUT(out elf32-littlemips)
+
+.pdr            0x0000000000000000     0x8380
+ .pdr           0x0000000000000000      0x140 nes/cpu/nes6502.o
+ .pdr           0x0000000000000140      0x140 nes/cpu/nes_6502.o
+ .pdr           0x0000000000000280      0x220 nes/ppu/nes_ppu.o
+ .pdr           0x00000000000004a0      0x140 nes/apu/fdssnd.o
+ .pdr           0x00000000000005e0      0x300 nes/apu/nes_apu.o
+ .pdr           0x00000000000008e0      0x220 nes/apu/nes_apu_wrapper.o
+ .pdr           0x0000000000000b00       0x80 nes/apu/nes_exsound.o
+ .pdr           0x0000000000000b80       0xe0 nes/apu/nes_fme7.o
+ .pdr           0x0000000000000c60       0xa0 nes/apu/nes_mmc5.o
+ .pdr           0x0000000000000d00       0xc0 nes/apu/nes_n106.o
+ .pdr           0x0000000000000dc0       0xc0 nes/apu/nes_vrc6.o
+ .pdr           0x0000000000000e80      0x140 nes/apu/nes_vrc7.o
+ .pdr           0x0000000000000fc0      0x420 nes/nes.o
+ .pdr           0x00000000000013e0       0x80 nes/nes_config.o
+ .pdr           0x0000000000001460     0x4e00 nes/nes_mapper.o
+ .pdr           0x0000000000006260      0x300 nes/nes_rom.o
+ .pdr           0x0000000000006560       0xc0 nes/snss.o
+ .pdr           0x0000000000006620      0x200 nes/fileio.o
+ .pdr           0x0000000000006820       0x40 nes/nes_crc32.o
+ .pdr           0x0000000000006860      0x1a0 nes/libsnss/libsnss.o
+ .pdr           0x0000000000006a00      0x1c0 emu_main.o
+ .pdr           0x0000000000006bc0       0x40 loadromimage.o
+ .pdr           0x0000000000006c00       0xc0 soundmanager.o
+ .pdr           0x0000000000006cc0      0x220 screenmanager.o
+ .pdr           0x0000000000006ee0       0x40 inputmanager.o
+ .pdr           0x0000000000006f20       0x20 startup.o
+ .pdr           0x0000000000006f40       0xa0 main.o
+ .pdr           0x0000000000006fe0      0x4c0 pg.o
+ .pdr           0x00000000000074a0      0x120 menu.o
+ .pdr           0x00000000000075c0       0xc0 filer.o
+ .pdr           0x0000000000007680       0x40 sound.o
+ .pdr           0x00000000000076c0       0x20 debug/debug.o
+ .pdr           0x00000000000076e0      0x200 string.o
+ .pdr           0x00000000000078e0      0x140 menu_submenu.o
+ .pdr           0x0000000000007a20       0x40 unzip/unziplib.a(zlibInterface.o)
+ .pdr           0x0000000000007a60      0x360 unzip/unziplib.a(unzip.o)
+ .pdr           0x0000000000007dc0      0x240 unzip/unziplib.a(zlibFileMemory.o)
+ .pdr           0x0000000000008000       0x40 unzip/unziplib.a(crc32.o)
+ .pdr           0x0000000000008040      0x140 unzip/unziplib.a(inflate.o)
+ .pdr           0x0000000000008180       0x20 unzip/unziplib.a(inftrees.o)
+ .pdr           0x00000000000081a0      0x100 unzip/unziplib.a(ioapi.o)
+ .pdr           0x00000000000082a0       0xa0 unzip/unziplib.a(zutil.o)
+ .pdr           0x0000000000008340       0x20 unzip/unziplib.a(adler32.o)
+ .pdr           0x0000000000008360       0x20 unzip/unziplib.a(inffast.o)
+
+.mdebug.eabi32  0x0000000000000000        0x0
+
+.debug_ranges
